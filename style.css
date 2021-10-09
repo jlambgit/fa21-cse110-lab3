@@ -1,0 +1,176 @@
+/* */
+* {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    display: block;
+}
+
+/* reference to all navigation links */
+a[href^="#"] {
+    text-decoration: none;
+}
+
+/* Navigation customizations */
+.navigation {
+    background-color: hsl(0,100%,94%);
+    border: 2px solid rgb(204,0,0);
+}
+
+ul {
+    list-style-position: inside
+}
+
+a:hover {
+    color:red
+}
+
+a:active {
+    color:green
+}
+
+/* Website images customizations */
+.website-photos{
+    position: static;
+    margin: 10px 10px 10px 10px;
+}
+
+
+/* Attendence List */
+.attend {
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: stretch;
+
+    /* boarder */
+    border: dashed;
+    border-top: 1em double;
+    border-bottom: 1em double;
+    border-color: goldenrod;
+    border-radius: 10px;
+
+    background-color: #ffe6b8;
+}
+
+/* title */
+#club-name {
+    font-family: "bebas neue";
+    src: url(https://fonts.google.com/specimen/Bebas+Neue#glyphs);
+    color: goldenrod;
+}
+
+/* agenda notes customization */
+
+.grid {
+        /* Grid */
+        display: grid;
+        height: 20em;
+        width: 20em;
+        max-width: 50em;
+        max-height: 50em;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "h-intro . h-cheese . h-fu . h-un . h-plan . h-misc"
+            "intro . cheese . fu . un . plan . misc";
+        position: relative;
+        left:-250px;
+        margin: 0 auto;
+        margin-bottom: 600px;
+}
+
+ #intro-notes, #cheese-notes, #fu-notes, #un-notes, #plan-notes, #misc-notes {
+    display: inline;
+    border: 1ex solid black;
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#intro {
+    grid-area: h-intro;
+}
+
+#intro-notes {
+    grid-area: intro;
+}
+
+#favorite-cheese {
+    grid-area: h-cheese;
+}
+
+#cheese-notes {
+    grid-area: cheese;
+}
+
+#future {
+    grid-area: h-fu;
+}
+
+#fu-notes {
+    grid-area: fu;
+}
+
+#unfinished-dis {
+    grid-area: h-un;
+}
+
+#un-notes {
+    grid-area: un;
+}
+
+#future-dis {
+    grid-area: h-plan;
+}
+
+#plan-notes {
+    grid-area: plan;
+}
+
+#misc {
+    grid-area: h-misc;
+}
+
+#misc-notes {
+    grid-area: misc;
+}
+
+/*  Combinators */
+main p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p > i {
+    color: indianred;
+}
+
+h4 + p {
+    font-family: 'Arial';
+    color: blue;
+}
+
+fieldset ~ p {
+    font-size: 80%;
+}
+
+img.website-photos {
+    border: dotted;
+    border-color: red
+}
+ 
+/* Media Query? */
+@media only screen and (min-width: 720px) {
+    body {
+        background-color: lightblue;
+    }
+}

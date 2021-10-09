@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+        <style>
+            /* Changes background color for whole document */
+            body {
+                background-color: lightgoldenrodyellow;
+            }
+        </style>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> Cheese Enthusiast Club  </title>
         <link rel="icon" type="image/png" href="rat.ico"/> 
+        <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
         <header>
-            <span> <b> QUICKLINKS </b> </span>
-            <nav>
+            <span style="color:blueviolet"> <b> QUICKLINKS </b> </span>
+            <nav class="navigation">
                 <ul>
                     <li><a href="#title"> Official Cheese Enthusiast Club </a></li>
                     <li><a href="#attendance-list"> Attendance List </a></li>
@@ -23,10 +30,9 @@
         </header>
 
         <main>
-        
         <section id="title">
             <img class="website-photos" src="cheese-king.png" alt="cheese-with-crown"/>
-            <h1> Official Cheese Enthusiast Club Consisting Of <em> Totally </em> Not Rats</h1>
+            <h1 id="club-name"> Official Cheese Enthusiast Club Consisting Of <em> Totally </em> Not Rats</h1>
             <h2>First Meeting </h2>
             <h3> July 7th, 2007 </h3>
             <p> 
@@ -81,7 +87,7 @@
             <p>
                 In order of who showed up:
             </p>
-            <ol>
+            <ol class="attend">
                 <li> Mousse </li>
                 <li> Remy the Non-Rat </li>
                 <li> Samuel Whiskers </li>
@@ -98,7 +104,7 @@
             <p> 
                 <i> The following is the topics we talked about during the first official meeting </i>
             </p>
-            <nav>
+            <nav class="navigation">
                 <ul>
                     <li><a href="#intro"> Introductions </a></li>
                     <li><a href="#favorite-cheese">  Discuss favorite cheeses </a></li>
@@ -109,59 +115,66 @@
                     <li><a href="#diagrams">  Diagrams and Photos shown </a></li>
                 </ul>
             </nav>
-            <h4 id="intro"> Introdutions </h4>
-            <p>
-                We introduced ourselves. We confirmed that none of us were rats.
-            </p>
+            <div class="grid">
+                <h4 id="intro"> Introdutions </h4>
+                <p  id="intro-notes">
+                    We introduced ourselves. We confirmed that none of us were rats.
+                </p>
 
-            <h4 id="favorite-cheese"> Favorite cheeses </h4>
-            <p>
-                We discussed our favorite cheeses. The top 3 cheeses were Cheddar, Brie, and Mozzarella.
-            </p>
+                <h4 id="favorite-cheese"> Favorite cheeses </h4>
+                <p  id="cheese-notes">
+                    We discussed our favorite cheeses. The top 3 cheeses were Cheddar, Brie, and Mozzarella.
+                </p>
 
-            <h4 id="future"> Future of cheese, the economy, and the impact of global warming on cheese </h4>
-            <p>
-                We agreed that the future of cheese may include nondairy options as there is a growing concern 
-                about the impact of dairy farms on our planet. Due to this, dairy cheese may become more expensive
-                in the near future. We are unsure how this will affect the economy as a whole.
-            </p>
+                <h4 id="future"> Future of cheese, the economy, and the impact of global warming on cheese </h4>
+                <p id="fu-notes">
+                    We agreed that the future of cheese may include nondairy options as there is a growing concern 
+                    about the impact of dairy farms on our planet. Due to this, dairy cheese may become more expensive
+                    in the near future. We are unsure how this will affect the economy as a whole.
+                </p>
 
-            <h4 id="unfinished-dis"> Unfinished Discussions from the Forums </h4>
-            <p>
-                As seen in our forums, there was a hot debate on the consumption of cheeses such as casu martzu, also known as <i> maggot cheese. </i>
-                At the meeting, we decided that if one truly desires to consume such a cheese, they should be able to. However, they must understand the risks
-                from eating such a risky cheese.
-            </p>
+                <h4 id="unfinished-dis"> Unfinished Discussions from the Forums </h4>
+                <p id="un-notes">
+                    As seen in our forums, there was a hot debate on the consumption of cheeses such as casu martzu, also known as <i> maggot cheese.</i>
+                    At the meeting, we decided that if one truly desires to consume such a cheese, they should be able to. However, they must understand the risks
+                    from eating such a risky cheese.
+                </p>
 
-            <h4 id="future-dis"> Future Plans </h4>
-                 We need to finish our discussion about the future economy and impact of global warming on cheese. <br>
-                 We need to figure out topics and ideas for future events at these meetings.  <br>
-                 We need to figure out when we shall create the Cheese Terminator <br>
+                <h4 id="future-dis"> Future Plans </h4>
+                <p id="plan-notes"> 
+                    We need to finish our discussion about the future economy and impact of global warming on cheese. 
+                    We need to figure out topics and ideas for future events at these meetings. 
+                    We need to figure out when we shall create the Cheese Terminator
+                </p>
 
-            <h4 id="misc"> Concerns, Questions, Comments </h4>
-            <p>
-                Remy asked about the how the club identifies a rat.
-                The whole group agreed that Mozzarella was the best cheese.
-                Many questions were asked regarding when the next meet up will be.
-            </p>
+                <h4  id="misc"> Concerns, Questions, Comments </h4>
+                <p id="misc-notes">
+                    Remy asked about the how the club identifies a rat.
+                    The whole group agreed that Mozzarella was the best cheese.
+                    Many questions were asked regarding when the next meet up will be.
+                </p>
+            </div>
 
-            <h4 id="diagrams"> Diagrams and Photos shown </h4>
-            <details>
-                <summary>
-                    Voted Number 1 Cheese
-                </summary>
-                    <img class="website-photos" src="number-one-cheese.png" alt="mozzarella-cheese"/>
-                    <p> <b> Mozzarella </b></p>
-            </details>
+                <h4 id="diagrams"> Diagrams and Photos shown </h4>
+                <details>
+                    <summary>
+                        Voted Number 1 Cheese
+                    </summary>
+                        <img class="website-photos" src="number-one-cheese.png" alt="mozzarella-cheese"/>
+                        <p> <b> Mozzarella </b></p>
+                </details>
 
-            <details>
-                <summary>
-                    Schematics of Cheese Terminator
-                </summary>
-                    <img class="website-photos" src="cheese-robot.png" alt="not-rat-robot-concept"/>
-            </details>
+                <br>
 
+                <details>
+                    <summary>
+                        Schematics of Cheese Terminator
+                    </summary>
+                        <img class="website-photos" src="cheese-robot.png" alt="not-rat-robot-concept"/>
+                </details>
         </section>
+
+        <br>
 
         <hr>
 
@@ -237,7 +250,7 @@
         </section>
         
         <footer>
-            <div>&copy; totally not rats</div>
+            <div>&copy; totally not rats <img src="rat-icon.png" alt="not-rat-icon"/></div> 
         </footer>
 
         </main>
